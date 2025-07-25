@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ireoluwa Onamusi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ireoluwa Onamusi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()"> About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          class="profile-image"
+          src="./assets/profile-pic.jpg"
+          alt="Ireoluwa profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ireoluwa Onamusi</h1>
+        <p class="section__text__p2">
+          Aspiring Frontend Developer & Backend Developer
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ireonamusi'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iamBolu'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience Through Projects</h3>
+              <p>
+                2+ years <br />Frontend Development <br />
+                Backend Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Concordia University <br />
+                4th year Computer Engineering
+                <br />
+                Expected Graduation: 2026
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a Computer Engineering student at Concordia University in
+              Montreal. I have hands-on experience in software development, IT
+              support, and building data pipelines. <br />I’m passionate about
+              solving real-world problems through code and continuously learning
+              new technologies. I enjoy working with tools like React, C++,
+              Python, and SQL. My recent projects include building a sign
+              language translator app, a full-stack chat platform, and an
+              autonomous hovercraft. I’m also experienced in using Git, VSCode,
+              and working in Agile environments. <br />I’m eager to collaborate,
+              grow, and make meaningful contributions to tech teams.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Chat Haven</h2>
+            <div class="article-container">
+              <p>
+                Chat Haven is a full-stack communication platform built using
+                React, JavaScript, HTML, and CSS.<br />
+                It features real-time public and private chat channels, direct
+                messaging, and online status indicators.<br />
+                The app supports emoji reactions, message quoting, and
+                notification settings to improve user interaction and
+                engagement.<br />
+                JavaScript handles state management and frontend logic, while
+                moderation tools like message deletion and blocking ensure a
+                safe and clean environment.<br />
+                The UI is responsive and user-friendly, designed to provide a
+                seamless messaging experience across devices with a focus on
+                usability and clean design.
+              </p>
+              <h4>What I did</h4>
+              <ul class="work">
+                <li>
+                  Built a responsive React frontend with real-time chat, emoji
+                  reactions, and message quoting.
+                </li>
+                <li>
+                  Implemented JavaScript logic for state management and user
+                  interaction.
+                </li>
+                <li>
+                  Added moderation features like message deletion and blocking
+                  to improve usability and safety.
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/CodeImmigrant/Code_Immigrants-SOEN341_Project_W25'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              Smart Glove translator
+            </h2>
+            <div class="article-container">
+              <p>
+                This Android app translates sign language into text and speech
+                using a smart glove.<br />
+                Developed with Java and Android Studio, it connects via
+                Bluetooth to an ESP32 microcontroller that sends real-time
+                sensor data.<br />
+                A machine learning model classifies static hand gestures to
+                recognize signs accurately.<br />
+                The app converts recognized gestures into speech with a
+                text-to-speech feature, enhancing accessibility for users.<br />
+                It includes a multi-screen user interface for translation,
+                gesture previews, and customizable settings,<br />
+                allowing users to manage and personalize gesture mappings for a
+                better user experience and greater flexibility.
+              </p>
+              <h4>What I did</h4>
+              <ul class="work-smart">
+                <li>
+                  Developed Bluetooth communication to receive real-time sensor
+                  data from the smart glove.
+                </li>
+                <li>
+                  Integrated a machine learning model to accurately classify
+                  static hand gestures.
+                </li>
+                <li>
+                  Created a multi-screen UI with translation, gesture preview,
+                  and customizable settings for better user control.
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/CodeImmigrant/Code_Immigrants-SOEN341_Project_W25'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:onamusibolu02@gmail.com">onamusibolu02@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ireonamusi">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ireoluwa Onamusi. All Rights Reserved.</p>
+    </footer>
+    <script src="mian.js"></script>
+  </body>
+</html>
