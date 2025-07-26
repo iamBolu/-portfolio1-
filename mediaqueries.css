@@ -185,4 +185,11 @@
   .about {
     padding-bottom: 10rem;
   }
+
+  .project-div {
+    width: 33rem;
+  }
+  .about-containers {
+    width: 100vw; /* 95% of the viewport width */
+  }
 }
